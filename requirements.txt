@@ -1,0 +1,9 @@
+ipykernel
+twilio 
+python-dotenv 
+flask
+twilio
+ngrok 
+virtualenv
+nest_asyncio
+flask[async]
