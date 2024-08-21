@@ -7,3 +7,4 @@ ngrok
 virtualenv
 nest_asyncio
 flask[async]
+flask_socketio
