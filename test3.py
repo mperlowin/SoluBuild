@@ -1,25 +1,25 @@
 from flask import Flask
-from flask_socketio import SocketIO
-from gevent import pywsgi
-from geventwebsocket.handler import WebSocketHandler
+from flask_sockets import Sockets
+
 
 app = Flask(__name__)
-socketio = SocketIO(logger=True, engineio_logger=True)
-socketio.init_app(app)
+sockets = Sockets(app)
 
-@socketio.on('connect')
-def handle_connect():
-    app.logger.info("Connection accepted")
-    print("Connection accepted")
 
-@socketio.on("message")
-def message(data):
-    print(data)
-    socketio.emit("myevent", "EVENT DATA HERE...")
+@sockets.route('/echo')
+def echo_socket(ws):
+    while not ws.closed:
+        message = ws.receive()
+        ws.send(message)
 
-# @socketio.on('disconnect')
-# def handle_disconnect():
-#     app.logger.info("Connection closed.")
+
+@app.route('/')
+def hello():
+    return 'Hello World!'
+
 
 if __name__ == "__main__":
-    pywsgi.WSGIServer(("", 5000), app, handler_class=WebSocketHandler).serve_forever()
+    from gevent import pywsgi
+    from geventwebsocket.handler import WebSocketHandler
+    server = pywsgi.WSGIServer(('', 5001), app, handler_class=WebSocketHandler)
+    server.serve_forever()

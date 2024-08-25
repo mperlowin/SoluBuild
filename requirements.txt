@@ -8,3 +8,8 @@ virtualenv
 nest_asyncio
 flask[async]
 flask_socketio
+gevent
+gevent-websocket
+flask_sockets
+django
+channels
