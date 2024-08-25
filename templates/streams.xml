@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Response>
-    <Start>
-        <Stream url="wss://fbfd-172-182-200-128.ngrok-free.app/media" />
-     </Start>
-     <Dial>+12393513986</Dial>
-</Response>

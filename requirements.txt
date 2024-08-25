@@ -13,3 +13,4 @@ gevent-websocket
 flask_sockets
 django
 channels
+daphne
