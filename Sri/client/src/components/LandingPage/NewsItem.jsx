@@ -7,12 +7,12 @@ function NewsItem({ title, date, content }) {
   return (
     <article className="flex flex-col pb-5 mt-3.5 w-full max-md:max-w-full">
       <div className="flex min-h-[5em] items-center gap-[1em]">
-        <div className="flex flex-col items-start pt-1 mt-0 max-md:max-w-[2em] bg-[#f4f4f4]">
+        <div className="flex flex-col items-start p-3 mt-0 max-md:max-w-[2em] bg-[#f4f4f4] border-2 rounded-full">
           <img
             loading="lazy"
             src="/project unity icon.svg"
             alt="News item icon"
-            className="object-contain aspect-square min-w-[5em]"
+            className="object-contain aspect-square min-w-[4em] border-4 rounded-full p-1"
           />
         </div>
         <div className="flex flex-col items-start text-left">
