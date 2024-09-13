@@ -25,14 +25,14 @@ SECRET_KEY = 'django-insecure-livezvyf^2lm$l)va2a%b#dqkxfgoh%ac1na208p#hf(fx12ye
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'daphne',
-    'chat',
+    'twiml',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

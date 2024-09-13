@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>the stream is about to start.</Say>
+   <Connect>
+       <Stream url="wss://30e4-172-182-200-128.ngrok-free.app/audiostream/" />
+   </Connect>
+   <Say>this stream has ended</Say>
+</Response>

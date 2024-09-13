@@ -14,3 +14,4 @@ flask_sockets
 django
 channels
 daphne
+openai-whisper
