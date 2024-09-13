@@ -10,9 +10,9 @@ function NewsItem({ title, date, content }) {
         <div className="flex flex-col items-start pt-1 mt-0 max-md:max-w-[2em]">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6421c1710046de6f552b8177c0a5b3a0d5c5355999b4885f66eff38e8ed9f149?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
+            src="/project unity icon.svg"
             alt="News item icon"
-            className="object-contain aspect-square max-w-[5em]"
+            className="object-contain aspect-square min-w-[5em]"
           />
         </div>
         <div className="flex flex-col items-start text-left">
