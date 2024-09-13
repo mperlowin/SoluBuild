@@ -7,7 +7,7 @@ function NewsItem({ title, date, content }) {
   return (
     <article className="flex flex-col pb-5 mt-3.5 w-full max-md:max-w-full">
       <div className="flex min-h-[5em] items-center gap-[1em]">
-        <div className="flex flex-col items-start pt-1 mt-0 max-md:max-w-[2em]">
+        <div className="flex flex-col items-start pt-1 mt-0 max-md:max-w-[2em] bg-[#f4f4f4]">
           <img
             loading="lazy"
             src="/project unity icon.svg"
