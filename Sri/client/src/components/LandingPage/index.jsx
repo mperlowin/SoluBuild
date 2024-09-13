@@ -9,9 +9,9 @@ import Footer from "./Footer";
 function LincolnProjectPage() {
   return (
     <div className="flex flex-col bg-white">
-      <Header />
+      {/* <Header /> */}
       <MainContent />
-      <Footer />
+      {/* <Footer /> */}
       <div className="flex w-full min-h-[1px] max-md:max-w-full" />
     </div>
   );

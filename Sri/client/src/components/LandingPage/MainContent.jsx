@@ -19,7 +19,6 @@ function MainContent() {
             <div className="flex flex-col w-full rounded-sm min-h-[800px] max-md:max-w-full">
               <JoinForm />
               <LatestNews />
-              <SearchBar />
             </div>
           </div>
         </aside>

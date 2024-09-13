@@ -6,21 +6,25 @@ import React from "react";
 function NewsItem({ title, date, content }) {
   return (
     <article className="flex flex-col pb-5 mt-3.5 w-full max-md:max-w-full">
-      <h3 className="z-10 self-end text-base font-medium leading-8 text-red-900 uppercase">
-        {title}
-      </h3>
-      <div className="flex flex-col items-start pt-1 mt-0 max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/6421c1710046de6f552b8177c0a5b3a0d5c5355999b4885f66eff38e8ed9f149?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
-          alt="News item icon"
-          className="object-contain aspect-square w-[60px]"
-        />
+      <div className="flex min-h-[5em] items-center gap-[1em]">
+        <div className="flex flex-col items-start pt-1 mt-0 max-md:max-w-[2em]">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6421c1710046de6f552b8177c0a5b3a0d5c5355999b4885f66eff38e8ed9f149?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
+            alt="News item icon"
+            className="object-contain aspect-square max-w-[5em]"
+          />
+        </div>
+        <div className="flex flex-col items-start text-left">
+          <h3 className="z-10 m-0 font-medium text-red-900 uppercase">
+            {title}
+          </h3>
+          <time className="z-10 mt-0 text-sm leading-none text-red-900 max-md:px-5 max-md:mr-1.5 max-md:max-w-full">
+            {date}
+          </time>
+        </div>
       </div>
-      <time className="z-10 pr-56 pl-16 mt-0 text-sm leading-none text-red-900 max-md:px-5 max-md:mr-1.5 max-md:max-w-full">
-        {date}
-      </time>
-      <p className="mt-2 text-sm leading-4 text-red-900 max-md:mr-2.5 max-md:max-w-full">
+      <p className="mt-2 text-sm leading-4 truncate text-red-900 max-md:mr-2.5 max-md:max-w-full">
         {content}
       </p>
       <div className="z-10 self-center mt-0 text-sm leading-tight text-red-900 underline">

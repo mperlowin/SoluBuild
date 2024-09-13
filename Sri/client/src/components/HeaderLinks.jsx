@@ -3,17 +3,35 @@
  */
 import React from "react";
 
-const links = [
-  "Latest News",
-  "ADS & RAPID RESPONSE",
-  "PODCAST",
-  "THE BREAKDOWN",
-  "PRESS",
-  "SHOP GEAR",
-  "Honestly Abe",
-  "Leadership",
-  "Contact",
-  "Home",
+const links = [  
+  {
+    name: "Current Updates",
+    url: "/current-updates",
+  },
+  {
+    name: "Ads & Quick Actions",
+    url: "/ads-quick-actions",
+  },
+  {
+    name: "Podcast",
+    url: "/podcast",
+  },
+  {
+    name: "Deep Dive",
+    url: "/deep-dive",
+  },
+  {
+    name: "Media",
+    url: "/media",
+  },
+  {
+    name: "Get in Touch",
+    url: "/get-in-touch",
+  },
+  {
+    name: "Home",
+    url: "/",
+  }
 ];
 
 function HeaderLinks() {
@@ -27,11 +45,11 @@ function HeaderLinks() {
                 {links.map((link, index) => (
                   <div
                     key={index}
-                    className={`flex flex-col self-stretch my-auto ${
-                      index === links.length - 1 ? "text-neutral-500" : ""
+                    className={`flex flex-col self-stretch cursor-pointer my-auto ${
+                      window.location.pathname == link.url ? "text-neutral-500" : ""
                     }`}
                   >
-                    <div className="px-3 py-2.5 w-full">{link}</div>
+                    <a href={link.url} className="px-3 py-2.5 w-full">{link.name}</a>
                   </div>
                 ))}
               </div>

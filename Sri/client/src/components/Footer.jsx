@@ -25,13 +25,36 @@ function Footer() {
 function FooterLinks() {
   const links = [
     [
-      "Latest News",
-      "Ads & Rapid Response",
-      "Podcast",
-      "The Breakdown",
-      "PRESS",
-    ],
-    ["Shop Gear", "Honestly Abe", "Leadership", "Contact"],
+      {
+        name: "Current Updates",
+        url: "/current-updates",
+      },
+      {
+        name: "Ads & Quick Actions",
+        url: "/ads-quick-actions",
+      },
+      {
+        name: "Podcast",
+        url: "/podcast",
+      },
+     {
+        name: "Deep Dive",
+        url: "/deep-dive",
+      }
+    ], 
+     [ {
+        name: "Media",
+        url: "/media",
+      },
+      {
+        name: "Get in Touch",
+        url: "/get-in-touch",
+      },
+      {
+        name: "Home",
+        url: "/",
+      }
+    ]
   ];
 
   return (
@@ -47,9 +70,9 @@ function FooterLinks() {
             }`}
           >
             {column.map((link, linkIndex) => (
-              <div key={linkIndex} className="whitespace-nowrap">
-                {link}
-              </div>
+              <a href={link.url} key={linkIndex} className="whitespace-nowrap cursor-pointer">
+                {link.name}
+              </a>
             ))}
           </div>
         </div>
@@ -67,7 +90,7 @@ function FooterActions() {
             <div className="flex h-full min-w-[240px]">
               <div className="flex flex-col justify-center items-center px-6 min-w-[240px] max-md:px-5">
                 <FooterAction
-                  text="Support The Mission"
+                  text="Support"
                   icon="https://cdn.builder.io/api/v1/image/assets/TEMP/55b22283d36fda7e9445859cd3e23c317719f8efe0be8c00b0ee907ee82c5fa5?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
                 />
                 <FooterAction
@@ -86,7 +109,7 @@ function FooterActions() {
 
 function FooterAction({ text, icon }) {
   return (
-    <div className="flex flex-col w-full h-9 max-w-[214px]">
+    <div className="flex flex-col w-full h-9 max-w-[314px]">
       <div className="flex gap-1.5 items-center px-1 py-1.5 w-full">
         <div className="flex justify-center items-start self-stretch pt-px pb-0.5 my-auto w-[17px]">
           <img

@@ -10,7 +10,7 @@ const newsItems = [
     title: "Lincoln Project's Official Statement on the Presidential Debate",
     date: "September 10, 2024",
     content:
-      "Lincoln Project's Official Statement on the Presidential Debate September 10, 2024 —Harris lit him up and melted his orange face paint like the Nazis in Indiana Jones. He's f*****. The Lincoln Project is a leading pro-democracy organization in the United States — dedicated to the preservation, protection, and defense of democracy. To learn more about…",
+      "The latest news on Sajith Premadasa revolves around his strong candidacy for the upcoming Sri Lankan presidential election. He has outlined a vision for improving the lives of ordinary citizens, with a focus on sustainable farming and expanding local industries. Premadasa has promised to establish 14 production factories in the Kurunegala district, which he hopes will stimulate the local economy. He has also pledged to renegotiate the International Monetary Fund's economic reforms to ensure that the wealthy contribute more while easing the burden on poorer citizens. In a significant development, State Minister Geetha Kumarasinghe has endorsed Premadasa's campaign, signaling a growing coalition of support. Premadasa's platform seeks to grow the economy through export-driven policies and provide devolution of power to regions with ethnic Tamil populations, addressing longstanding demands.",
   },
   {
     id: 2,
@@ -18,13 +18,6 @@ const newsItems = [
     date: "September 10, 2024",
     content:
       "Vice Presidents Are United: Trump Ain't It September 10, 2024 —Four years ago Mike Pence and Kamala Harris hammered at each other to get the job, but now both Vice Presidents are joined by Dick Cheney in trying to stop a destructive Trump second term. In a new ad, the Lincoln Project eviscerates Trump for…",
-  },
-  {
-    id: 3,
-    title: "Trump & RFK Jr.'s Illegal Dance",
-    date: "August 30, 2024",
-    content:
-      "Trump & RFK Jr.'s Illegal Dance August 30, 2024 —The Lincoln Project has sent a letter today formally requesting the Department of Justice (DOJ) open an investigation into Donald Trump to determine if he violated 18 U.S.C. § 599 or 18 U.S.C. § 600 by promising to appoint, or support for appointment, RFK Jr. to…",
   },
 ];
 
