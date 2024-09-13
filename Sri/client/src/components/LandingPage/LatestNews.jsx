@@ -7,14 +7,14 @@ import NewsItem from "./NewsItem";
 const newsItems = [
   {
     id: 1,
-    title: "Lincoln Project's Official Statement on the Presidential Debate",
+    title: "Sajith Premadasa Promises New Era of Prosperity and Fairness for Sri Lanka",
     date: "September 10, 2024",
     content:
       "The latest news on Sajith Premadasa revolves around his strong candidacy for the upcoming Sri Lankan presidential election. He has outlined a vision for improving the lives of ordinary citizens, with a focus on sustainable farming and expanding local industries. Premadasa has promised to establish 14 production factories in the Kurunegala district, which he hopes will stimulate the local economy. He has also pledged to renegotiate the International Monetary Fund's economic reforms to ensure that the wealthy contribute more while easing the burden on poorer citizens. In a significant development, State Minister Geetha Kumarasinghe has endorsed Premadasa's campaign, signaling a growing coalition of support. Premadasa's platform seeks to grow the economy through export-driven policies and provide devolution of power to regions with ethnic Tamil populations, addressing longstanding demands.",
   },
   {
     id: 2,
-    title: "Vice Presidents Are United: Trump Ain't It",
+    title: "Presidential Hopeful Sajith Premadasa Vows to Reform Economy and Empower Communities",
     date: "September 10, 2024",
     content:
       "Vice Presidents Are United: Trump Ain't It September 10, 2024 —Four years ago Mike Pence and Kamala Harris hammered at each other to get the job, but now both Vice Presidents are joined by Dick Cheney in trying to stop a destructive Trump second term. In a new ad, the Lincoln Project eviscerates Trump for…",
@@ -23,17 +23,26 @@ const newsItems = [
 
 function LatestNews() {
   return (
-    <div className="flex flex-col px-6 py-7 mt-6 w-full shadow-sm bg-white bg-opacity-0 max-md:px-5 max-md:max-w-full">
-      <h2 className="text-3xl font-light text-red-900 leading-[72px] max-md:max-w-full">
+    <div className="relative flex flex-col px-6 py-7 mt-6 w-full bg-white bg-opacity-80 rounded-lg shadow-md max-md:px-5 max-md:max-w-full">
+      {/* Title */}
+      <h2 className="text-4xl font-semibold text-red-900 tracking-wide mb-6 border-b-2 border-red-900 pb-2 max-md:text-3xl max-md:pb-1">
         Latest News
       </h2>
-      <div className="flex flex-col mt-3.5 max-md:max-w-full">
+      
+      {/* News Items */}
+      <div className="flex flex-col space-y-5 max-md:max-w-full">
         {newsItems.map((item) => (
-          <NewsItem key={item.id} {...item} />
+          <div
+            key={item.id}
+            className="p-4 bg-white rounded-lg shadow-sm transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105"
+          >
+            <NewsItem {...item} />
+          </div>
         ))}
       </div>
     </div>
   );
 }
+
 
 export default LatestNews;

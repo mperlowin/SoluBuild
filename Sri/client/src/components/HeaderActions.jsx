@@ -11,11 +11,11 @@ function HeaderActions() {
         <div className="flex self-stretch my-auto min-w-[240px]">
           <div className="flex flex-wrap justify-center items-center h-full min-w-[240px]">
             <HeaderAction
-              text="Support The Mission"
+              text="Contribute"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/7070f84021ae9fdf4f3bc1782fa452c60528f20208a774e941f1c5d703f01e51?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
             />
             <HeaderAction
-              text="Join The Union"
+              text="Join Us"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/0aa4c899c0cfb1a004a9b33d8977c6e159b9aa47d4236501c2d6d69c833a5015?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
             />
           </div>

@@ -6,11 +6,11 @@ import React from "react";
 function NewsItem({ title, date, content }) {
   return (
     <article className="flex flex-col pb-5 mt-3.5 w-full max-md:max-w-full">
-      <div className="flex min-h-[5em] items-center gap-[1em]">
+      <div className="flex min-h-[5em] items-center gap-[1em] text-left">
         <div className="flex flex-col items-start p-3 mt-0 max-md:max-w-[2em] bg-[#f4f4f4] border-2 rounded-full">
           <img
             loading="lazy"
-            src="/project unity icon.svg"
+            src="https://project-unity-2.s3.amazonaws.com/static/project+unity+icon.svg"
             alt="News item icon"
             className="object-contain aspect-square min-w-[4em] border-4 rounded-full p-1"
           />
@@ -24,7 +24,7 @@ function NewsItem({ title, date, content }) {
           </time>
         </div>
       </div>
-      <p className="mt-2 text-sm leading-4 truncate text-red-900 max-md:mr-2.5 max-md:max-w-full">
+      <p className="mt-2 text-sm text-left leading-4 truncate-multiline text-red-900 max-md:mr-2.5 max-md:max-w-full">
         {content}
       </p>
       <div className="z-10 self-center mt-0 text-sm leading-tight text-red-900 underline">

@@ -5,18 +5,25 @@ import React from "react";
 
 function JoinForm() {
   return (
-    <form className="flex relative flex-col px-4 pt-1.5 pb-4 w-full text-center text-red-900 border border-solid shadow-sm bg-white bg-opacity-0 border-gray-600 border-opacity-20 max-md:max-w-full">
-      <div className="flex absolute inset-px z-0 max-w-full bg-neutral-500 bg-opacity-10 min-h-[226px] w-[479px]" />
-      <h2 className="px-20 w-full text-2xl font-light leading-[58px] max-md:px-5 max-md:max-w-full">
-        JOIN THE LINCOLN PROJECT
+    <form className="relative flex flex-col items-center px-6 py-6 w-full max-w-md mx-auto bg-white rounded-lg shadow-lg bg-opacity-80 backdrop-blur-lg max-md:max-w-full">
+      {/* Background box with shadow */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-red-500 to-red-900 opacity-20 rounded-lg shadow-md"></div>
+      
+      {/* Heading */}
+      <h2 className="relative z-10 text-3xl font-semibold text-red-900 tracking-wide mb-2 max-md:text-2xl">
+        JOIN PROJECT UNITY
       </h2>
-      <p className="px-20 w-full text-sm leading-none max-md:px-5 max-md:max-w-full">
+      
+      {/* Description */}
+      <p className="relative z-10 text-base text-gray-700 mb-6 max-md:text-sm">
         Sign up to receive news and alerts via email.
       </p>
-      <div className="flex z-0 flex-wrap justify-center items-center px-40 pt-8 w-full text-lg tracking-tighter leading-relaxed text-white whitespace-nowrap max-md:px-5 max-md:max-w-full">
+      
+      {/* Button container */}
+      <div className="relative z-10 flex justify-center w-full">
         <button
           type="submit"
-          className="flex overflow-hidden justify-center items-center self-stretch px-5 py-2 my-auto bg-red-900 rounded border-2 border-red-900 border-solid"
+          className="flex justify-center items-center px-8 py-3 bg-red-700 text-white font-bold rounded-full transition-all duration-300 ease-in-out hover:bg-red-800 hover:shadow-lg"
         >
           SUBSCRIBE
         </button>
@@ -24,5 +31,6 @@ function JoinForm() {
     </form>
   );
 }
+
 
 export default JoinForm;

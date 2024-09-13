@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 function Footer() {
   return (
-    <footer className="flex flex-col w-full mt-[509px] max-md:mt-10 max-md:max-w-full">
+    <footer className="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
       <div className="flex flex-col items-center px-20 w-full bg-white max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col px-6 w-full max-w-[1290px] max-md:px-5 max-md:max-w-full">
           <div className="flex gap-5 justify-center py-8 w-full max-md:max-w-full">
@@ -90,11 +90,11 @@ function FooterActions() {
             <div className="flex h-full min-w-[240px]">
               <div className="flex flex-col justify-center items-center px-6 min-w-[240px] max-md:px-5">
                 <FooterAction
-                  text="Support"
+                  text="Contribute"
                   icon="https://cdn.builder.io/api/v1/image/assets/TEMP/55b22283d36fda7e9445859cd3e23c317719f8efe0be8c00b0ee907ee82c5fa5?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
                 />
                 <FooterAction
-                  text="Join The Union"
+                  text="Join Us"
                   icon="https://cdn.builder.io/api/v1/image/assets/TEMP/7667dfa233fc1ac05fcd71a3da38559bc8ddfda3e7b8e8628d746ccb1a8ac933?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
                 />
               </div>
@@ -134,7 +134,7 @@ function FooterLogo() {
         <div className="flex flex-col px-16 w-full max-md:px-5 max-md:max-w-full">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/875acd4d13fa67bb0d1a93608fde09911d166bf678e16115b33e3329bd58f561?placeholderIfAbsent=true&apiKey=553b31a98a6c4f6db980cd4c031d36cc"
+            src="https://project-unity-2.s3.amazonaws.com/static/Gimhanna+Logo+V1.svg"
             alt="Footer Logo"
             className="object-contain aspect-[7.63] w-[350px]"
           />
@@ -157,11 +157,11 @@ function FooterCopyright() {
             <div className="flex flex-col flex-1 shrink self-stretch my-auto w-full basis-0 min-w-[240px] max-md:max-w-full">
               <div className="flex flex-col items-center px-20 w-full max-md:px-5 max-md:max-w-full">
                 <div className="leading-7 text-orange-700 max-md:max-w-full">
-                  PAID FOR BY THE LINCOLN PROJECT. <br />
+                  PAID FOR BY PROJECT UNITY. <br />
                   Not authorized by any candidate or candidate's committee.
                 </div>
                 <div className="leading-relaxed whitespace-nowrap text-rose-950">
-                  www.LincolnProject.us
+                  www.ProjectUnity.com
                 </div>
               </div>
             </div>
@@ -170,9 +170,9 @@ function FooterCopyright() {
             <div className="flex flex-col flex-1 shrink justify-center self-stretch py-5 my-auto w-full basis-0 min-w-[240px] max-md:max-w-full">
               <div className="flex flex-wrap justify-center items-start pr-14 pl-12 w-full max-md:px-5 max-md:max-w-full">
                 <div className="text-orange-700">
-                  © 2024 The Lincoln Project – All Rights Reserved |{" "}
+                  © 2024 Project Unity – All Rights Reserved |{" "}
                 </div>
-                <a href="#" className="underline text-rose-950">
+                <a href="/privacy-policy" className="underline text-rose-950">
                   Privacy Policy
                 </a>
               </div>

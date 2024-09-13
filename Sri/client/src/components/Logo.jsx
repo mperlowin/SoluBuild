@@ -8,7 +8,7 @@ function Logo() {
     <div className="flex grow shrink justify-center items-center h-full min-w-[240px] w-[371px] max-md:max-w-full">
       <img
         loading="lazy"
-        src="/Gimhanna Logo V1.svg"
+        src='https://project-unity-2.s3.amazonaws.com/static/Gimhanna+Logo+V1.svg'
         alt="Company Logo"
         className="object-contain self-stretch my-auto aspect-[8.26] min-w-[240px] w-[428px]"
       />
